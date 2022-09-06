@@ -1,0 +1,104 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  bottom: 0px;
+  height: 75px;
+  margin-top: 5px;
+  background-color: black;
+  color: antiquewhite;
+  font-size: 62.5%; }
+  footer p {
+    margin-bottom: 0; }
+
+.logo {
+  height: 35px; }
+
+.imagenCar {
+  height: 500px;
+  object-fit: cover; }
+
+.menuContent {
+  margin-right: 10px; }
+
+.centrado {
+  margin: 5px auto; }
+
+.imagenZapa, .imagenRemera {
+  height: 25vw;
+  min-width: 110px;
+  object-fit: cover;
+  min-height: 200px; }
+
+.imagenRemera {
+  min-height: 210px; }
+
+.precio {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #13254d; }
+
+.purchase {
+  background: linear-gradient(0deg, #36D1DC, #5B86E5);
+  border: 0px solid; }
+  .purchase:hover {
+    background: linear-gradient(180deg, #36D1DC, #5B86E5);
+    border: 0px solid; }
+
+.producto {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+  background: linear-gradient(180deg, #e9e9e9, #ffffff); }
+
+.tituloPrincipal {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #d1d1d1, #ffffff);
+  margin: 0; }
+
+.tituloSecundario {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0px; }
+
+.locales {
+  background-color: #f3f3f3;
+  box-shadow: 2px 2px 4px #afafaf;
+  margin: 4px; }
+  .locales p {
+    font-size: 12px; }
+
+.enviar {
+  background: #13254d;
+  color: whitesmoke; }
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px 0px; }
+  .contacto p {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+
+.itemNav a:hover {
+  color: #13254d;
+  font-weight: bold; }
+
+.personalizada {
+  border: 1px solid #dddddd; }
+  .personalizada:hover {
+    box-shadow: 3px 3px 8px #b9b9b9, -3px 0px 8px #b9b9b9;
+    animation-name: sombra;
+    animation-duration: 0.3s; }
+
+@keyframes sombra {
+  from {
+    box-shadow: 1px 1px 5px #d3d3d3, -1px 0px 5px #d3d3d3; }
+  to {
+    box-shadow: 3px 3px 8px #b9b9b9, -3px 0px 8px #b9b9b9; } }
