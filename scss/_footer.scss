@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100vw;
+    bottom: 0px;
+    height: 75px;    
+    margin-top: 5px;
+    background-color: black ;
+    color: antiquewhite;
+    font-size: 62.5%;
+
+    p{
+        margin-bottom: 0;
+    }
+}

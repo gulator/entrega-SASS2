@@ -1,0 +1,126 @@
+@import "footer";
+@import "extras";
+
+.logo {
+    height: 35px;
+}
+
+.imagenCar {
+    height: 500px;
+    object-fit: cover;
+
+}
+
+.menuContent {
+    margin-right: 10px;
+}
+
+.centrado {
+    margin: 5px auto;
+}
+
+.imagenZapa {
+    height: 25vw;
+    min-width: 110px;
+    object-fit: cover;
+    min-height: 200px;
+}
+
+.imagenRemera {
+    @extend .imagenZapa;
+    min-height: 210px; 
+}
+
+.precio{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: map-get($mapColores, azul);
+}
+
+.purchase {
+    background: linear-gradient(0deg, #36D1DC, #5B86E5);
+    border: 0px solid;
+
+    &:hover {
+        background: linear-gradient(180deg, #36D1DC, #5B86E5);
+        border: 0px solid;
+    }
+}
+
+.producto {
+    height: 50px;
+    @include visualizacion;
+    align-items: center;
+    margin: 15px auto;
+    background: linear-gradient(180deg, #e9e9e9, #ffffff);
+}
+
+.tituloPrincipal {
+    @include visualizacion;
+    background: linear-gradient(180deg, #d1d1d1, #ffffff);
+    margin: 0;
+}
+
+.tituloSecundario {
+    @include visualizacion;
+    margin: 15px 0px;
+}
+
+.locales {
+    background-color: #f3f3f3;
+    box-shadow: 2px 2px 4px #afafaf;
+    margin: 4px;
+
+    p {
+        font-size: 12px;
+    }
+}
+
+.enviar {
+    background: map-get($mapColores, azul);
+    color: whitesmoke;
+}
+
+.contacto {
+    @include visualizacion;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 0px;
+
+    p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+.itemNav {
+    a {
+        &:hover {
+            color: map-get($mapColores, azul);
+            font-weight: bold
+        }
+    }
+}
+
+.personalizada {
+    border: 1px solid #dddddd;
+
+    &:hover {
+        box-shadow: 3px 3px 8px #b9b9b9,
+            -3px 0px 8px #b9b9b9;
+        animation-name: sombra;
+        animation-duration: 0.3s;
+    }
+}
+
+@keyframes sombra {
+    from {
+        box-shadow: 1px 1px 5px map-get($mapColores, grisD3),
+            -1px 0px 5px map-get($mapColores, grisD3);
+    }
+
+    to {
+        box-shadow: 3px 3px 8px map-get($mapColores, grisB9),
+            -3px 0px 8px map-get($mapColores, grisB9);
+    }
+}

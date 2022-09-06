@@ -1,0 +1,11 @@
+$mapColores: (
+  azul: #13254d,  
+  grisB9: #b9b9b9,
+  grisD3: #d3d3d3,
+  
+);
+
+@mixin visualizacion {
+  display: flex;
+  justify-content: center;  
+}
